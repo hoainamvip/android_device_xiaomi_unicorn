@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/unicorn/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 PRODUCT_NAME := pixelage_unicorn
 PRODUCT_DEVICE := unicorn
