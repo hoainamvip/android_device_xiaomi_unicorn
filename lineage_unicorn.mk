@@ -23,7 +23,7 @@ PRODUCT_SYSTEM_PROPERTIES += ro.lunaris.maintainer=AnhLaPR59 | 龙卷风
 # =========================
 
 # Size boot animation
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from unicorn device
 $(call inherit-product, device/xiaomi/unicorn/device.mk)
