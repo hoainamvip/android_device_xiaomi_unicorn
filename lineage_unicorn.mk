@@ -22,6 +22,9 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 PRODUCT_SYSTEM_PROPERTIES += ro.lunaris.maintainer=AnhLaPR59 | 龙卷风
 # =========================
 
+# Size boot animation
+TARGET_BOOT_ANIMATION_RES := 1440
+
 # Inherit from unicorn device
 $(call inherit-product, device/xiaomi/unicorn/device.mk)
 
