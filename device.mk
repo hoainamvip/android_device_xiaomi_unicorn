@@ -18,6 +18,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.com.google.lens.oem_camera_package=com.android.camera \
+    ro.miui.notch=1 \
+    ro.product.mod_device=unicorn_global
+
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
