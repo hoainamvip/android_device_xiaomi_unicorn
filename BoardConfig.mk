@@ -25,3 +25,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Screen density
 TARGET_SCREEN_DENSITY := 560
+
+# Sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/xiaomi/unicorn/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += device/xiaomi/unicorn/sepolicy/vendor
