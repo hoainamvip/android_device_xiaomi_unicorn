@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    ApertureResUnicorn \
     FrameworksResUnicorn \
     LineageResUnicorn \
     NfcResUnicorn \
