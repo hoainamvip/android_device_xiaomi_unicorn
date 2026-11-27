@@ -8,6 +8,16 @@
 TARGET_HAS_UDFPS := true
 $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 
+# Inherit from miuicamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-unicorn/miuicamera-vendor.mk)
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.com.google.lens.oem_camera_package=com.android.camera \
+    ro.miui.notch=1
+
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.camera.privapp.list=com.android.camera
+
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/unicorn/unicorn-vendor.mk)
 
