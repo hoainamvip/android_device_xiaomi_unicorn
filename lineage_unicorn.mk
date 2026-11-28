@@ -3,24 +3,14 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# ===== Lunaris flags =====
-TARGET_CUSTOM_UDFPS := true
 
-WITH_GMS := true
-WITH_GMS_COMMS_SUITE := true
-WITH_PIXEL_LAUNCHER := false
-TARGET_USE_MAPS := true
-TARGET_USE_FILES := true
-TARGET_USE_GPHOTOS := true
-TARGET_USE_WALLPAPERS := true
-
-USE_REALITY_ENGINE := true
-SURFACE_FLINGER_BOOST := true
-$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
-$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
-
-PRODUCT_SYSTEM_PROPERTIES += ro.lunaris.maintainer=AnhLaPR59 | 龙卷风
-# =========================
+# AxionOS flags
+TARGET_DISABLE_EPPE := true
+AXION_CAMERA_REAR_INFO := 50,50,50
+AXION_CAMERA_FRONT_INFO := 32
+AXION_MAINTAINER := hoainamvip
+AXION_PROCESSOR := Snapdragon_8+_Gen_1
+TARGET_INCLUDE_AXFX := false
 
 # Size boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
