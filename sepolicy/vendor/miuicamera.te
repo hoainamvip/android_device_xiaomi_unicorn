@@ -1,2 +1,23 @@
 binder_call(hal_camera_default, priv_app)
 binder_call(hal_camera_default, platform_app)
+# Camera & Postproc HAL clients
+hal_client_domain(priv_app, vendor_hal_camerapostproc_xiaomi)
+hal_client_domain(platform_app, vendor_hal_camerapostproc_xiaomi)
+
+binder_call(priv_app, hal_camera_default)
+binder_call(platform_app, hal_camera_default)
+
+allow priv_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+
+# Camera & display properties
+get_prop(priv_app, vendor_camera_sensor_prop)
+get_prop(priv_app, vendor_display_prop)
+get_prop(priv_app, vendor_panel_info_prop)
+
+get_prop(platform_app, vendor_camera_sensor_prop)
+get_prop(platform_app, vendor_display_prop)
+get_prop(platform_app, vendor_panel_info_prop)
+get_prop(priv_app, vendor_camera_p3enable_prop)
+get_prop(platform_app, vendor_camera_p3enable_prop)
+
